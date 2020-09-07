@@ -4,7 +4,7 @@ library(RcppRoll)
 library(ggplot2)
 
 
-Population_frame <- readRDS('~/R/evolving_mutation_fifth_reproduce_popframe.rds')
+Population_frame <- readRDS('~/R/evolving_museeded_mutation_fifth_reproduce_popframe.rds')
 
 # Make graph of absolute population values
 Population_frame %>%
@@ -16,7 +16,7 @@ Population_frame %>%
   theme_bw() +
   
   
-  ggsave('~/Documents/strepto/evolving_mutation_fifth_mutants_plots/popsize_05cycle.png',
+  ggsave('~/Documents/strepto/evolving_mutation_museeded_fifth_produce_plots/popsize_05cycle.png',
          height = 210,
          width  = 297,
          units= 'mm',
@@ -32,7 +32,7 @@ Population_frame %>%
   theme_bw() +
   
   
-  ggsave('~/Documents/strepto/evolving_mutation_fifth_mutants_plots/popsize_075cycle.png',
+  ggsave('~/Documents/strepto/evolving_mutation_museeded_fifth_produce_plots/popsize_075cycle.png',
          height = 210,
          width  = 297,
          units= 'mm',
@@ -47,7 +47,7 @@ Population_frame %>%
   theme_bw() +
   
   
-  ggsave('~/Documents/strepto/evolving_mutation_fifth_mutants_plots/popsize_025cycle.png',
+  ggsave('~/Documents/strepto/evolving_mutation_museeded_fifth_produce_plots/popsize_025cycle.png',
          height = 210,
          width  = 297,
          units= 'mm',
@@ -61,7 +61,7 @@ Population_frame %>%
 
 
 
-costs_frame <- readRDS('~/R/evolving_mutation_fifth_reproduce_costframe.rds')
+costs_frame <- readRDS('~/R/evolving_museeded_mutation_fifth_reproduce_costframe.rds')
 
 
 # Make cost graph
@@ -76,7 +76,7 @@ costs_frame %>%
   theme_bw() +
   ylim(c(0,1.5))
 
-ggsave('~/Documents/strepto/evolving_mutation_fifth_mutants_plots/costs_axis.png',
+ggsave('~/Documents/strepto/evolving_mutation_museeded_fifth_produce_plots/costs_axis.png',
        height = 210,
        width  = 297,
        units= 'mm',
@@ -91,7 +91,7 @@ costs_frame %>%
   ggtitle('mutation-rates seed 1:10') +
   theme_bw() 
 
-ggsave('~/Documents/strepto/evolving_mutation_fifth_mutants_plots/mutation_rate.png',
+ggsave('~/Documents/strepto/evolving_mutation_museeded_fifth_produce_plots/mutation_rate.png',
        height = 210,
        width  = 297,
        units= 'mm',
@@ -107,7 +107,7 @@ costs_frame %>%
   theme_bw() +
   
   
-  ggsave('~/Documents/strepto/evolving_mutation_fifth_mutants_plots/production.png',
+  ggsave('~/Documents/strepto/evolving_mutation_museeded_fifth_produce_plots/production.png',
          height = 210,
          width  = 297,
          units= 'mm',
